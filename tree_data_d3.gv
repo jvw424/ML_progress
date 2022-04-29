@@ -1,0 +1,38 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+graph [ranksep=equally, splines=polyline] ;
+edge [fontname="helvetica"] ;
+0 [label="ZoneTime <= 0.483\ngini = 0.62\nsamples = 4654\nvalue = [2645, 833, 405, 76, 600, 86, 5, 4]\nclass = Fastball", fillcolor="#f3c3a1"] ;
+1 [label="RelSpeed <= 81.156\ngini = 0.157\nsamples = 2725\nvalue = [2499, 27, 69, 62, 4, 64, 0, 0]\nclass = Fastball", fillcolor="#e78c4a"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="HorzBreak <= 2.759\ngini = 0.565\nsamples = 331\nvalue = [207, 24, 58, 16, 2, 24, 0, 0]\nclass = Fastball", fillcolor="#f1ba93"] ;
+1 -> 2 ;
+3 [label="gini = 0.585\nsamples = 39\nvalue = [5, 22, 0, 11, 1, 0, 0, 0]\nclass = Slider", fillcolor="#e9f5b1"] ;
+2 -> 3 ;
+4 [label="gini = 0.475\nsamples = 292\nvalue = [202, 2, 58, 5, 1, 24, 0, 0]\nclass = Fastball", fillcolor="#efb185"] ;
+2 -> 4 ;
+5 [label="HorzBreak <= 4.009\ngini = 0.083\nsamples = 2394\nvalue = [2292, 3, 11, 46, 2, 40, 0, 0]\nclass = Fastball", fillcolor="#e68642"] ;
+1 -> 5 ;
+6 [label="gini = 0.316\nsamples = 221\nvalue = [179, 3, 1, 37, 1, 0, 0, 0]\nclass = Fastball", fillcolor="#eb9e66"] ;
+5 -> 6 ;
+7 [label="gini = 0.054\nsamples = 2173\nvalue = [2113, 0, 10, 9, 1, 40, 0, 0]\nclass = Fastball", fillcolor="#e6853f"] ;
+5 -> 7 ;
+8 [label="HorzBreak <= 3.371\ngini = 0.694\nsamples = 1929\nvalue = [146, 806, 336, 14, 596, 22, 5, 4]\nclass = Slider", fillcolor="#f6fbe0"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="VertBreak <= -58.729\ngini = 0.513\nsamples = 1422\nvalue = [4, 795, 8, 12, 593, 2, 5, 3]\nclass = Slider", fillcolor="#f2f9cf"] ;
+8 -> 9 ;
+10 [label="gini = 0.29\nsamples = 610\nvalue = [0, 105, 0, 0, 503, 2, 0, 0]\nclass = Curveball", fillcolor="#63b2eb"] ;
+9 -> 10 ;
+11 [label="gini = 0.265\nsamples = 812\nvalue = [4, 690, 8, 12, 90, 0, 5, 3]\nclass = Slider", fillcolor="#d1e95a"] ;
+9 -> 11 ;
+12 [label="RelHeight <= 4.53\ngini = 0.501\nsamples = 507\nvalue = [142, 11, 328, 2, 3, 20, 0, 1]\nclass = ChangeUp", fillcolor="#a1f29a"] ;
+8 -> 12 ;
+13 [label="gini = 0.207\nsamples = 71\nvalue = [63, 2, 5, 0, 1, 0, 0, 0]\nclass = Fastball", fillcolor="#e89051"] ;
+12 -> 13 ;
+14 [label="gini = 0.416\nsamples = 436\nvalue = [79, 9, 323, 2, 2, 20, 0, 1]\nclass = ChangeUp", fillcolor="#81ed78"] ;
+12 -> 14 ;
+{rank=same ; 0} ;
+{rank=same ; 1; 8} ;
+{rank=same ; 2; 5; 9; 12} ;
+{rank=same ; 3; 4; 6; 7; 10; 11; 13; 14} ;
+}
